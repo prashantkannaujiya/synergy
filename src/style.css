@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400&display=swap");
+body {
+  background-color: #faaebc;
+}
+.App {
+  text-align: center;
+}
+.App > h1 {
+  margin: 0px;
+
+  background-color: #f06b81;
+  color: white;
+  padding: 0.6cm;
+  padding-bottom: 0.7cm;
+  font-family: "Edu SA Beginner", cursive;
+}
+#menu {
+  background-color: aliceblue;
+  padding: 0.3cm;
+  color: rgb(10, 10, 10);
+}
+#menu > span {
+  margin: 1cm;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+
+  color: #444242;
+}
+#aboutUs {
+  margin-top: 1.7cm;
+  display: inline-block;
+  width: 35%;
+  font-family: "Mulish", sans-serif;
+  font-size: larger;
+}
+#userDisplay {
+  text-align: left;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 60%;
+  position: relative;
+  left: 3in;
+}
+#users {
+  background-color: aliceblue;
+  margin: 0.6cm;
+  padding: 0.3cm;
+  border-radius: 6px;
+  color: grey;
+}
+.userOptions {
+  margin: 5px;
+  background-color: #d33d3d;
+  color: white;
+  padding: 3px;
+  border: 0px;
+  border-radius: 3px;
+  position: relative;
+  left: 1.3cm;
+}
+.subHeading {
+  margin: 6px;
+  color: grey;
+  font-size: x-large;
+  font-family: "Mulish", sans-serif;
+}
+#errorMsg {
+  display: none;
+  position: relative;
+  width: 36%;
+  height: 1.5in;
+  top: 0.6cm;
+  left: 4.5in;
+  color: grey;
+  border-radius: 8px;
+  background-color: aliceblue;
+}
+#errorMsg > sub {
+  position: absolute;
+  right: 2px;
+}
+#errorMsg > div {
+  padding: 0.7cm;
+  font-weight: 500;
+}
+.close {
+  background-color: aliceblue;
+  border: 0px;
+  font-size: x-large;
+}
+table {
+  margin: auto;
+}
+.eraseButton,
+form > button {
+  margin: 5px;
+  background-color: #d33d3d;
+  border: 0px;
+  color: white;
+  border-radius: 4px;
+  padding: 9px;
+}
+
+#home {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 1.5cm;
+}
+#icon {
+  font-size: 4in;
+  color: white;
+}
+#homeHeading {
+  font-size: 0.5in;
+  color: white;
+  position: relative;
+  top: 2cm;
+}
+td {
+  padding: 8px;
+}
+input {
+  background-color: #dce0e4;
+  border: 0px;
+}
+.boxContent {
+  width: 37%;
+  border-radius: 24px;
+  background-color: aliceblue;
+  position: relative;
+  left: 4.6in;
+  top: 0.9cm;
+  color: grey;
+  padding: 0.3cm;
+  font-family: "Mulish", sans-serif;
+  margin-bottom: 2cm;
+  font-size: larger;
+}
+#tip {
+  position: absolute;
+  left: 3.1in;
+  top: 3.3cm;
+  background-color: rgb(247, 247, 207);
+  border: 0.1px solid;
+  z-index: 1;
+  border-radius: 3px;
+  height: 0.75cm;
+  padding-right: 1px;
+}
+#tipIcon {
+  font-size: 0.7cm;
+  padding: 1px;
+  color: orange;
+}
+#tip > sub {
+  position: relative;
+  bottom: 0.35cm;
+  padding: 2px;
+}
+@media only screen and (max-width: 600px) {
+  #menu {
+    width: auto;
+    text-align: center;
+    padding: 0;
+  }
+  #menu > span {
+    margin: 8px;
+  }
+  #home {
+    margin-top: 1.5cm;
+    width: 100%;
+    justify-content: center;
+  }
+  #icon {
+    font-size: 3cm;
+  }
+  #homeHeading {
+    font-size: medium;
+    top: 1cm;
+  }
+  #userDisplay {
+    display: block;
+    position: static;
+    width: 70%;
+  }
+  #users {
+    position: relative;
+    left: 1.58cm;
+  }
+  .userOptions {
+    padding: 0.3cm;
+    left: 1cm;
+  }
+  .boxContent {
+    left: 1.2cm;
+    width: 70%;
+  }
+  .eraseButton,
+  form > button {
+    padding: 0.4cm;
+  }
+}

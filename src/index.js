@@ -1,13 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import App from "./App";
+import reportWebVitals from "./reportWebVitals";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import Create from "./Create";
+import Delete from "./Delete";
+import List from "./List";
+import Update from "./Update";
+import Home from "./Home";
+import About from "./About";
+import Tech from "./Tech";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App></App>}>
+          <Route index element={<Home></Home>} />
+          <Route path="/Create" element={<Create></Create>} />
+          <Route path="/Delete" element={<Delete></Delete>} />
+          <Route path="/List" element={<List></List>} />
+          <Route path="/Update" element={<Update></Update>} />
+          <Route path="/About" element={<About></About>} />
+          <Route path="/Tech" element={<Tech></Tech>} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
