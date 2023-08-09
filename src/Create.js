@@ -14,8 +14,8 @@ function Create() {
       phone: k[2].value,
     };
     fetch("http://jsonplaceholder.typicode.com/posts", {
-      method: "post",
-      mode: "cors",
+      method:"post",
+      
       headers: {
         "content-type": "application/json",
       },
@@ -25,7 +25,12 @@ function Create() {
       .then((data) => {
         alert("User Created");
         navigate("/List");
-      });
+      })
+      .catch((e)=>{
+        alert('API not responding')
+        navigate("/List");
+
+      })
   }
   return (
     <div className="boxContent">

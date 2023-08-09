@@ -21,7 +21,7 @@ function Update() {
       phone: data.phone,
     };
     fetch("https://jsonplaceholder.typicode.com/posts/1", {
-      mode: "cors",
+      
       method: "put",
       headers: {
         "content-type": "application/json",
@@ -34,7 +34,12 @@ function Update() {
         ev.target.reset();
         navigate("/List");
         console.log(data);
-      });
+      })
+      .catch((e)=>{
+        alert('unable to connect')
+        navigate("/List");
+
+      })
   }
   return (
     <div className="boxContent">

@@ -13,7 +13,12 @@ function Delete() {
       console.log(data);
       alert("deleted");
       navigate("/List");
-    });
+    })
+    .catch((e)=>{
+alert('Unable to connect')
+navigate("/List");
+
+    })
   }
   return (
     <div>

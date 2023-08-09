@@ -14,6 +14,7 @@ function List() {
       })
       .catch((e) => {
         //display an error dialog box
+        alert('failed');
         document.getElementById("errorMsg").style.display = "block";
       });
   }, []);
@@ -64,8 +65,9 @@ function List() {
           }
         })}
       </div>
-      {/*an error dialog box, displaying by setting visibility*/}
+      
       <div id="errorMsg">
+      {/*an error dialog box, displaying by setting visibility*/}
         <sub
           onClick={() => {
             document.getElementById("errorMsg").style.display = "none";
