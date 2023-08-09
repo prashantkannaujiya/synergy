@@ -13,11 +13,11 @@ function Create() {
       email: k[1].value,
       phone: k[2].value,
     };
-    fetch("http://jsonplaceholder.typicode.com/posts", {
+    fetch("https://jsonplaceholder.typicode.com/posts", {
       method:"post",
       
       headers: {
-        "content-type": "application/json",
+        "content-type": "application/json;charset=UTF-8",
       },
       body: JSON.stringify(t),
     })
